@@ -1,0 +1,12 @@
+b=input().split(" ")
+a=input().split(" ")
+n= b[0] #number of friends
+h= b[1] #fence height
+width =0
+
+for i in range(len(a)):
+    if int(a[i]) > int (h):
+        width += 2
+    else:
+        width += 1
+print(width)
