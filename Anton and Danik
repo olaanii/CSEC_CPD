@@ -1,0 +1,23 @@
+n = int(input(" "))
+wins=input(" ")
+lists = list(wins)
+global a
+global d
+def _result():
+    global d, a,f
+    a=0
+    d=0
+    for item in lists:
+        if item == "A":
+            a+= 1
+        elif item=="D":
+            d+= 1
+        else:
+            return 0
+    if a > d:
+        print("Anton")
+    elif a<d:
+        print("Danik")
+    else:
+        print("Friendship")
+_result()
